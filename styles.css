@@ -1,0 +1,102 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: fixed;
+    top: 0px;
+}
+
+.ml-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#b1{
+    background-color:rgb(44, 112, 244) ;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+.flex-item {
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 200px;
+    border: 1px solid grey;
+    background-color: #cccc;
+  }
+
+  .griditems1{
+    grid-area: a;
+  }
+  .griditems2{
+    grid-area: b;
+  }
+  .griditems3{
+    grid-area: c;
+  }
+  .griditems4{
+    grid-area: d;
+  }
+  .griditems5{
+    grid-area: e;
+  }
+  .griditems6{
+    grid-area: m;
+  }
+  .griditems7{
+    grid-area: n;
+  }
+  .griditems8{
+    grid-area: f;
+  }
+  .griditems9{
+    grid-area: g;
+  }
+  
+  .grid-container{
+    display: grid;
+    padding: 30px;
+    grid-gap: 5px;
+    grid-template-columns: (6,1fr);
+    grid-template-rows: (4,1fr);
+   
+    grid-template-areas: 
+    "a a b c m m"
+    "a a d e n n"
+    "f f g g g g"
+    "f f g g g g";
+  }
+  .gridgd{
+    border: 1px solid grey;
+    background-color: #cccc;
+    height: 100px;
+  }
+  
+  /* Custom CSS for the photo gallery */
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .photo-gallery img {
+    width: 100%;
+    height: auto;
+  }
+  /* Custom CSS for the cards */
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
